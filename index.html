@@ -1,533 +1,1351 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maria Adeel — UI/UX Designer & Web Developer</title>
-<meta name="description" content="Maria Adeel — self-taught UI/UX designer and web developer who learns by building real projects. Portfolio of learning projects, skills, and progress in design, development, and AI-assisted workflows.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta property="og:title" content="Maria Adeel — UI/UX Designer & Web Developer">
-<meta property="og:description" content="Self-taught designer and developer who learns by building. Explore my learning journey, projects and skills.">
-<meta property="og:type" content="website">
+    <meta name="description" content="Maria Adeel — Web Development & AI Learning Portfolio">
+    <meta name="author" content="Maria Adeel">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <title>Maria Adeel | Web Development & AI Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<a class="skip-link" href="#main">Skip to content</a>
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-<!-- ============ NAV ============ -->
-<nav aria-label="Primary">
-  <div class="wrap nav-inner">
-    <a href="#top" class="nav-mark">Maria Adeel</a>
+<header class="navbar" id="navbar">
 
-    <ul class="nav-links">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#journey">Journey</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-container">
 
-    <div class="nav-actions">
-      <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle dark mode" aria-pressed="false">
-        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
-      </button>
-      <button id="menuToggle" class="icon-btn hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="2" y1="5" x2="18" y2="5"/><line x1="2" y1="10" x2="18" y2="10"/><line x1="2" y1="15" x2="18" y2="15"/></svg>
-      </button>
-    </div>
-  </div>
+        <a href="#home" class="logo">
+            <span class="logo-mark">M</span>
+            <span>Maria<span class="logo-dot">.</span></span>
+        </a>
 
-  <div id="mobileMenu" class="mobile-menu">
-    <a href="#work">Work</a>
-    <a href="#journey">Journey</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+        <nav class="nav-menu" id="navMenu">
 
-<main id="main">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#journey" class="nav-link">Journey</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#learning" class="nav-link">Learning</a>
+            <a href="#contact" class="nav-link">Contact</a>
 
-<!-- ============ HERO ============ -->
-<header class="hero" id="top">
-  <div class="wrap hero-inner">
+        </nav>
 
-    <span class="label-tag mono reveal">
-      <span class="dot"></span> CURRENTLY LEARNING + BUILDING
-    </span>
+        <a href="#contact" class="nav-cta">
+            Let's Connect
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
 
-    <h1 class="display reveal">
-      Maria Adeel
-    </h1>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-    <p class="role-line mono reveal">UI/UX DESIGNER · WEB DEVELOPER · AI EXPLORER</p>
-
-    <h2 class="headline reveal">I design and build simple digital experiences.</h2>
-
-    <p class="hero-sub reveal">
-      I'm a self-taught designer and developer who learns by turning ideas into real projects.
-      I work with HTML, CSS, Figma, Git/GitHub and AI-powered development tools —
-      and I'm continuously expanding what I can build.
-    </p>
-
-    <div class="hero-cta reveal">
-      <a class="btn btn-primary" href="#work">View my work</a>
-      <a class="btn btn-ghost" href="#contact">Let's connect</a>
     </div>
 
-    <!-- signature annotation element -->
-    <div class="annot-row reveal" aria-hidden="true">
-      <span class="dim mono">
-        <svg width="40" height="10" viewBox="0 0 40 10"><line x1="0" y1="5" x2="40" y2="5"/><line x1="0" y1="1" x2="0" y2="9"/><line x1="40" y1="1" x2="40" y2="9"/></svg>
-        FRAME — 001
-      </span>
-      <span class="dim mono">X: 24 · Y: 96</span>
-      <span class="dim mono">◎ cursor</span>
-    </div>
-  </div>
-
-  <div class="hero-grid" aria-hidden="true"></div>
 </header>
 
-<!-- ============ PERSONAL INTRO ============ -->
-<section class="section intro-strip">
-  <div class="wrap">
-    <p class="intro-quote reveal">"Learning by building, <em>one project at a time.</em>"</p>
-    <p class="intro-sub reveal">
-      I believe the best way to learn design and development is by actually creating things —
-      not just reading about them. Every project here started as a question I wanted to answer with my hands.
-    </p>
-  </div>
-</section>
 
-<!-- ============ SELECTED WORK ============ -->
-<section class="section" id="work">
-  <div class="wrap">
-    <div class="section-label">
-      <span class="num mono">01 / WORK</span>
-      <h2>Selected work</h2>
-      <p class="section-sub">Real learning and personal projects — labeled honestly, not dressed up as client work.</p>
+<!-- =========================
+     HERO
+========================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-bg">
+        <div class="gradient-orb orb-one"></div>
+        <div class="gradient-orb orb-two"></div>
+        <div class="gradient-orb orb-three"></div>
+
+        <div class="floating-shape shape-one"></div>
+        <div class="floating-shape shape-two"></div>
+        <div class="floating-shape shape-three"></div>
     </div>
 
-    <div class="project-list">
+    <div class="hero-container">
 
-      <!-- PROJECT 01 -->
-      <article class="project-card reveal">
-        <div class="project-media">
-          <span class="proj-num mono">01</span>
-          <svg viewBox="0 0 200 140" class="proj-art"><rect x="10" y="10" width="180" height="24" rx="3" class="a-fill"/><rect x="10" y="44" width="70" height="86" rx="3" class="b-fill"/><rect x="90" y="44" width="100" height="40" rx="3" class="a-fill" opacity=".5"/><rect x="90" y="90" width="46" height="40" rx="3" class="c-fill"/><rect x="144" y="90" width="46" height="40" rx="3" class="a-fill" opacity=".3"/></svg>
-        </div>
-        <div class="project-body">
-          <span class="tag category">Web Development · Practice Project</span>
-          <h3>Travel Agency Website</h3>
-          <p>A travel agency website built as part of my web development learning journey — focused on structuring a complete, navigable webpage from scratch.</p>
-          <div class="tag-row">
-            <span class="tag">HTML5</span><span class="tag">CSS</span><span class="tag">UI Structure</span><span class="tag">Git/GitHub</span>
-          </div>
-          <details class="case-study">
-            <summary>What I learned</summary>
-            <div class="case-body">
-              <p><strong>What it is:</strong> A multi-section travel agency webpage — home, destinations, and contact content.</p>
-              <p><strong>Process:</strong> Idea → Structure → Build → Review</p>
-              <p><strong>What I learned:</strong> Semantic HTML, page structure, navigation patterns, content organization, and how to put together a complete webpage.</p>
+        <div class="hero-content reveal">
+
+            <div class="availability">
+                <span class="pulse-dot"></span>
+                Learning • Building • Growing
             </div>
-          </details>
-          <div class="project-links">
-            <a class="frame-link" href="#" target="_blank" rel="noopener">Live project ↗</a>
-            <a class="frame-link" href="#" target="_blank" rel="noopener">GitHub ↗</a>
-          </div>
-        </div>
-      </article>
 
-      <!-- PROJECT 02 -->
-      <article class="project-card reveal">
-        <div class="project-media">
-          <span class="proj-num mono">02</span>
-          <svg viewBox="0 0 200 140" class="proj-art"><circle cx="55" cy="70" r="26" class="b-fill"/><circle cx="105" cy="45" r="16" class="a-fill" opacity=".5"/><circle cx="105" cy="95" r="16" class="a-fill" opacity=".5"/><line x1="55" y1="70" x2="105" y2="45" stroke="currentColor" stroke-width="2" opacity=".4"/><line x1="55" y1="70" x2="105" y2="95" stroke="currentColor" stroke-width="2" opacity=".4"/><circle cx="150" cy="70" r="10" class="c-fill"/><line x1="121" y1="45" x2="140" y2="65" stroke="currentColor" stroke-width="2" opacity=".4"/></svg>
-        </div>
-        <div class="project-body">
-          <span class="tag category">Development · Learning Project</span>
-          <h3>My First Git & GitHub Project</h3>
-          <p>A practice project created while learning version control — from a first commit to publishing on GitHub Pages.</p>
-          <div class="tag-row">
-            <span class="tag">Git init/add/commit</span><span class="tag">Push/Pull</span><span class="tag">.gitignore</span><span class="tag">GitHub Pages</span>
-          </div>
-          <details class="case-study">
-            <summary>What I learned</summary>
-            <div class="case-body">
-              <p><strong>What it is:</strong> A small repository used specifically to practice Git and GitHub workflows.</p>
-              <p><strong>Process:</strong> Init → Track changes → Commit → Push → Publish</p>
-              <p><strong>What I learned:</strong> git init, add, commit, push, pull, .gitignore, working with GitHub, GitHub Pages, and the basics of GitHub Actions.</p>
+            <p class="eyebrow">
+                WEB DEVELOPMENT × AI
+            </p>
+
+            <h1>
+                Hi, I'm
+                <span class="gradient-text">Maria Adeel.</span>
+                <br>
+                I’m turning curiosity into
+                <span class="highlight-word">digital experiences.</span>
+            </h1>
+
+            <p class="hero-description">
+                A curious learner building my path into web development,
+                AI-assisted development and creative digital projects —
+                one project at a time.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn btn-primary">
+                    Explore My Work
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+
+                <a href="#about" class="btn btn-secondary">
+                    My Story
+                    <i class="fa-regular fa-compass"></i>
+                </a>
+
             </div>
-          </details>
-          <div class="project-links">
-            <a class="frame-link" href="#" target="_blank" rel="noopener">GitHub ↗</a>
-          </div>
-        </div>
-      </article>
 
-      <!-- PROJECT 03 -->
-      <article class="project-card reveal featured">
-        <div class="project-media">
-          <span class="proj-num mono">03</span>
-          <svg viewBox="0 0 200 140" class="proj-art"><rect x="10" y="20" width="55" height="100" rx="4" class="a-fill"/><rect x="72" y="20" width="55" height="46" rx="4" class="c-fill"/><rect x="72" y="74" width="55" height="46" rx="4" class="b-fill" opacity=".6"/><rect x="134" y="20" width="56" height="100" rx="4" class="a-fill" opacity=".4"/></svg>
-        </div>
-        <div class="project-body">
-          <span class="tag category">Web Design · Personal Business Project</span>
-          <h3>Horizon Web Studio</h3>
-          <p>My own web design brand, built around creating professional websites for growing small businesses — restaurants, local services, portfolios and landing pages.</p>
-          <div class="tag-row">
-            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Figma</span><span class="tag">UI Design</span><span class="tag">Git/GitHub</span>
-          </div>
-          <details class="case-study">
-            <summary>What I learned</summary>
-            <div class="case-body">
-              <p><strong>My role:</strong> Designer + Web Developer</p>
-              <p><strong>Process:</strong> Idea → Structure → UX → Design → Build</p>
-              <p><strong>What I learned:</strong> Turning a small business's needs into a simple, usable website — from layout decisions to responsive structure.</p>
+            <div class="hero-stats">
+
+                <div class="stat">
+                    <strong>01</strong>
+                    <span>Curiosity</span>
+                </div>
+
+                <div class="stat">
+                    <strong>∞</strong>
+                    <span>Learning</span>
+                </div>
+
+                <div class="stat">
+                    <strong>100%</strong>
+                    <span>Hands-on</span>
+                </div>
+
             </div>
-          </details>
-          <div class="project-links">
-            <a class="frame-link" href="#horizon">See Horizon Web Studio ↓</a>
-          </div>
-        </div>
-      </article>
 
-      <!-- PROJECT 04 -->
-      <article class="project-card reveal">
-        <div class="project-media">
-          <span class="proj-num mono">04</span>
-          <svg viewBox="0 0 200 140" class="proj-art"><rect x="60" y="10" width="80" height="120" rx="14" class="a-fill" opacity=".2"/><circle cx="100" cy="55" r="18" class="b-fill"/><rect x="78" y="82" width="44" height="10" rx="5" class="c-fill"/><rect x="84" y="98" width="32" height="8" rx="4" class="a-fill"/></svg>
         </div>
-        <div class="project-body">
-          <span class="tag category">UI/UX · App Development · Educational Product</span>
-          <h3>Islamic Kids Learning App</h3>
-          <p>An educational app concept designed to make Islamic learning engaging for children through stories, games, quizzes, XP, levels, achievements, and a parent dashboard for tracking progress.</p>
-          <div class="tag-row">
-            <span class="tag">Product Thinking</span><span class="tag">UX</span><span class="tag">Figma</span><span class="tag">Age-adaptive Design</span>
-          </div>
-          <details class="case-study">
-            <summary>What I learned</summary>
-            <div class="case-body">
-              <p><strong>What it is:</strong> A concept for a children's educational app — not yet commercially launched.</p>
-              <p><strong>Process:</strong> Idea → Structure → UX → Design → Development → Learning</p>
-              <p><strong>Focus:</strong> Age-adaptive learning paths, gamified progress (XP, levels, certificates), and a parent-facing progress dashboard.</p>
+
+
+        <!-- Hero visual -->
+
+        <div class="hero-visual reveal">
+
+            <div class="code-window">
+
+                <div class="window-header">
+
+                    <div class="window-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span class="window-title">maria.dev</span>
+
+                    <span class="window-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </span>
+
+                </div>
+
+                <div class="code-body">
+
+                    <div class="code-line">
+                        <span class="line-number">01</span>
+                        <span class="pink">const</span>
+                        <span class="blue">maria</span>
+                        <span class="white">=</span>
+                        <span class="yellow">{</span>
+                    </div>
+
+                    <div class="code-line indent">
+                        <span class="line-number">02</span>
+                        <span class="purple">name:</span>
+                        <span class="green">"Maria Adeel"</span><span class="white">,</span>
+                    </div>
+
+                    <div class="code-line indent">
+                        <span class="line-number">03</span>
+                        <span class="purple">focus:</span>
+                        <span class="green">"Web + AI"</span><span class="white">,</span>
+                    </div>
+
+                    <div class="code-line indent">
+                        <span class="line-number">04</span>
+                        <span class="purple">learning:</span>
+                        <span class="green">"Every day"</span><span class="white">,</span>
+                    </div>
+
+                    <div class="code-line indent">
+                        <span class="line-number">05</span>
+                        <span class="purple">building:</span>
+                        <span class="green">"Real projects"</span><span class="white">,</span>
+                    </div>
+
+                    <div class="code-line">
+                        <span class="line-number">06</span>
+                        <span class="yellow">}</span><span class="white">;</span>
+                    </div>
+
+                    <div class="code-line blank"></div>
+
+                    <div class="code-line">
+                        <span class="line-number">08</span>
+                        <span class="pink">while</span>
+                        <span class="white">(</span>
+                        <span class="blue">learning</span>
+                        <span class="white">)</span>
+                        <span class="yellow">{</span>
+                    </div>
+
+                    <div class="code-line indent">
+                        <span class="line-number">09</span>
+                        <span class="blue">build</span><span class="white">();</span>
+                    </div>
+
+                    <div class="code-line indent">
+                        <span class="line-number">10</span>
+                        <span class="blue">improve</span><span class="white">();</span>
+                    </div>
+
+                    <div class="code-line">
+                        <span class="line-number">11</span>
+                        <span class="yellow">}</span>
+                    </div>
+
+                </div>
+
+                <div class="terminal-bar">
+                    <span class="terminal-dot"></span>
+                    <span>creating something new...</span>
+                    <span class="cursor">_</span>
+                </div>
+
             </div>
-          </details>
-          <div class="project-links">
-            <a class="frame-link" href="#" target="_blank" rel="noopener">View concept ↗</a>
-          </div>
-        </div>
-      </article>
 
-      <!-- PROJECT 05 -->
-      <article class="project-card reveal">
-        <div class="project-media">
-          <span class="proj-num mono">05</span>
-          <svg viewBox="0 0 200 140" class="proj-art"><circle cx="60" cy="70" r="30" class="c-fill" opacity=".5"/><circle cx="120" cy="50" r="18" class="a-fill"/><circle cx="140" cy="95" r="22" class="b-fill" opacity=".6"/></svg>
-        </div>
-        <div class="project-body">
-          <span class="tag category">UI/UX · Educational Design · AI Exploration</span>
-          <h3>Toddler Learning App Concept</h3>
-          <p>A concept for an interactive toddler learning app with cute characters, simple games and child-friendly interfaces — explored with the help of AI-assisted creative tools.</p>
-          <div class="tag-row">
-            <span class="tag">Concept</span><span class="tag">Child-friendly UI</span><span class="tag">AI-assisted Ideation</span>
-          </div>
-          <details class="case-study">
-            <summary>What I learned</summary>
-            <div class="case-body">
-              <p><strong>What it is:</strong> An early-stage concept exploration, not a finished product.</p>
-              <p><strong>Process:</strong> Idea → Exploration → Visual concepts</p>
-              <p><strong>What I learned:</strong> How to use AI tools to quickly explore visual directions and interaction ideas for very young users.</p>
+            <div class="floating-card card-project">
+                <div class="mini-icon">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <div>
+                    <small>Currently building</small>
+                    <strong>Web + AI Projects</strong>
+                </div>
             </div>
-          </details>
+
+            <div class="floating-card card-learning">
+                <div class="mini-icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <div>
+                    <small>Mindset</small>
+                    <strong>Learn → Build → Improve</strong>
+                </div>
+            </div>
+
         </div>
-      </article>
 
     </div>
-  </div>
+
+    <a href="#about" class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <i class="fa-solid fa-arrow-down"></i>
+    </a>
+
 </section>
 
-<!-- ============ LEARNING JOURNEY ============ -->
-<section class="section timeline-section" id="journey">
-  <div class="wrap">
-    <div class="section-label">
-      <span class="num mono">02 / JOURNEY</span>
-      <h2>My learning journey</h2>
-      <p class="section-sub">From learning the basics to building real digital products.</p>
-    </div>
 
-    <ol class="timeline">
-      <li class="tl-item reveal">
-        <span class="tl-marker mono">01</span>
-        <div class="tl-body"><h3>HTML — My Starting Point</h3><p>Learning the structure of websites and semantic HTML.</p></div>
-      </li>
-      <li class="tl-item reveal">
-        <span class="tl-marker mono">02</span>
-        <div class="tl-body"><h3>CSS — Making Interfaces Beautiful</h3><p>Learning styling, layout, colors, typography, Flexbox, Grid and responsive design.</p></div>
-      </li>
-      <li class="tl-item reveal">
-        <span class="tl-marker mono">03</span>
-        <div class="tl-body"><h3>Git & GitHub — Building Like a Developer</h3><p>Learning version control, repositories, commits, branches, pushing and publishing projects.</p></div>
-      </li>
-      <li class="tl-item reveal">
-        <span class="tl-marker mono">04</span>
-        <div class="tl-body"><h3>UI/UX — Understanding the User</h3><p>Learning interface design, layout, typography, color, wireframes, user flows and visual hierarchy.</p></div>
-      </li>
-      <li class="tl-item reveal">
-        <span class="tl-marker mono">05</span>
-        <div class="tl-body"><h3>Figma — From Ideas to Interfaces</h3><p>Creating designs, wireframes and prototypes.</p></div>
-      </li>
-      <li class="tl-item reveal">
-        <span class="tl-marker mono">06</span>
-        <div class="tl-body"><h3>AI + Development</h3><p>Exploring AI-assisted development, prompt engineering and modern AI tools.</p></div>
-      </li>
-      <li class="tl-item reveal">
-        <span class="tl-marker mono">07</span>
-        <div class="tl-body"><h3>App Development</h3><p>Learning how to take an educational app idea from concept and structure toward a working product.</p></div>
-      </li>
-      <li class="tl-item reveal current">
-        <span class="tl-marker mono">08</span>
-        <div class="tl-body">
-          <h3>What's Next</h3>
-          <p>Currently continuing to develop: CSS, Responsive Web Design, JavaScript, Advanced UI/UX, App Development, and AI-powered applications.</p>
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section about-section" id="about">
+
+    <div class="section-container">
+
+        <div class="section-heading reveal">
+
+            <span class="section-number">01 / ABOUT</span>
+
+            <h2>
+                A different path.
+                <span>A new direction.</span>
+            </h2>
+
         </div>
-      </li>
-    </ol>
-  </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-text reveal">
+
+                <p class="large-text">
+                    My journey into technology didn't begin with a
+                    computer science degree.
+                </p>
+
+                <p>
+                    I come from a background in Chemistry and education,
+                    but curiosity led me toward the world of web
+                    development and AI.
+                </p>
+
+                <p>
+                    Instead of simply learning theory, I wanted to
+                    understand by <strong>building.</strong> So I started
+                    creating websites, experimenting with HTML and CSS,
+                    learning JavaScript, using GitHub and exploring
+                    AI-powered development tools.
+                </p>
+
+                <p>
+                    Every project has taught me something new — not only
+                    about code, but about design, problem-solving,
+                    persistence and turning an idea into something people
+                    can actually use.
+                </p>
+
+                <div class="about-signature">
+                    <span>Maria</span>
+                    <small>Always learning. Always building.</small>
+                </div>
+
+            </div>
+
+
+            <div class="about-visual reveal">
+
+                <div class="journey-card">
+
+                    <div class="journey-card-top">
+                        <span>MY JOURNEY</span>
+                        <i class="fa-solid fa-route"></i>
+                    </div>
+
+                    <div class="journey-path">
+
+                        <div class="path-item">
+                            <div class="path-icon chemistry">
+                                <i class="fa-solid fa-flask"></i>
+                            </div>
+                            <div>
+                                <strong>Curiosity</strong>
+                                <span>Exploring new possibilities</span>
+                            </div>
+                        </div>
+
+                        <div class="path-line"></div>
+
+                        <div class="path-item">
+                            <div class="path-icon teaching">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+                            <div>
+                                <strong>Learning</strong>
+                                <span>Understanding through practice</span>
+                            </div>
+                        </div>
+
+                        <div class="path-line"></div>
+
+                        <div class="path-item">
+                            <div class="path-icon code">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div>
+                                <strong>Building</strong>
+                                <span>Creating websites & projects</span>
+                            </div>
+                        </div>
+
+                        <div class="path-line"></div>
+
+                        <div class="path-item">
+                            <div class="path-icon ai">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <div>
+                                <strong>AI + Web</strong>
+                                <span>Where I'm heading next</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<!-- ============ LEARNING PHILOSOPHY ============ -->
-<section class="section philosophy">
-  <div class="wrap">
-    <h2 class="reveal">I learn by building.</h2>
-    <p class="philosophy-text reveal">"I don't want to learn technology only through theory. I learn by creating projects, making mistakes, fixing them, and improving the next version."</p>
 
-    <div class="principle-grid">
-      <div class="principle reveal"><span class="p-num mono">01</span><h3>Learn</h3><p>Understand the concept.</p></div>
-      <div class="principle reveal"><span class="p-num mono">02</span><h3>Build</h3><p>Turn the concept into something real.</p></div>
-      <div class="principle reveal"><span class="p-num mono">03</span><h3>Experiment</h3><p>Try different approaches and tools.</p></div>
-      <div class="principle reveal"><span class="p-num mono">04</span><h3>Improve</h3><p>Reflect, refine and build again.</p></div>
+<!-- =========================
+     LEARNING JOURNEY
+========================= -->
+
+<section class="section journey-section" id="journey">
+
+    <div class="section-container">
+
+        <div class="section-heading centered reveal">
+
+            <span class="section-number">02 / LEARNING JOURNEY</span>
+
+            <h2>
+                From first line of code
+                <span>to real projects.</span>
+            </h2>
+
+            <p>
+                I'm learning by doing — turning each new skill into
+                something tangible.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-marker">
+                    <span>01</span>
+                </div>
+
+                <div class="timeline-content">
+
+                    <div class="timeline-icon">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+
+                    <div>
+                        <span class="timeline-label">FOUNDATION</span>
+                        <h3>HTML</h3>
+                        <p>
+                            Learning how websites are structured and
+                            building clean, meaningful page layouts.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>Semantic HTML</span>
+                            <span>Forms</span>
+                            <span>Accessibility</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-marker">
+                    <span>02</span>
+                </div>
+
+                <div class="timeline-content">
+
+                    <div class="timeline-icon css-icon">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+
+                    <div>
+                        <span class="timeline-label">DESIGN</span>
+                        <h3>CSS</h3>
+                        <p>
+                            Exploring layouts, responsive design,
+                            animations, colors, typography and visual
+                            hierarchy.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>Flexbox</span>
+                            <span>Grid</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-marker">
+                    <span>03</span>
+                </div>
+
+                <div class="timeline-content">
+
+                    <div class="timeline-icon js-icon">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+
+                    <div>
+                        <span class="timeline-label">INTERACTION</span>
+                        <h3>JavaScript</h3>
+                        <p>
+                            Learning how to turn static pages into
+                            interactive experiences and understand
+                            programming logic.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>DOM</span>
+                            <span>Events</span>
+                            <span>Logic</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-marker">
+                    <span>04</span>
+                </div>
+
+                <div class="timeline-content">
+
+                    <div class="timeline-icon github-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                    <div>
+                        <span class="timeline-label">WORKFLOW</span>
+                        <h3>GitHub</h3>
+                        <p>
+                            Learning repositories, commits, version
+                            control and publishing projects to the web.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>GitHub Pages</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-marker">
+                    <span>05</span>
+                </div>
+
+                <div class="timeline-content">
+
+                    <div class="timeline-icon ai-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+
+                    <div>
+                        <span class="timeline-label">NEXT CHAPTER</span>
+                        <h3>AI-Assisted Development</h3>
+                        <p>
+                            Exploring how AI tools can help turn ideas
+                            into useful applications while continuing
+                            to understand the code behind them.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>AI Tools</span>
+                            <span>Prompting</span>
+                            <span>Rapid Prototyping</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-  </div>
+
 </section>
 
-<!-- ============ WHAT I CAN DO ============ -->
-<section class="section">
-  <div class="wrap">
-    <div class="section-label">
-      <span class="num mono">03 / CAPABILITIES</span>
-      <h2>What I can do</h2>
+
+<!-- =========================
+     FEATURED PROJECT
+========================= -->
+
+<section class="section featured-section" id="projects">
+
+    <div class="section-container">
+
+        <div class="section-heading reveal">
+
+            <span class="section-number">03 / FEATURED PROJECT</span>
+
+            <h2>
+                An idea turned
+                <span>into an experience.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="featured-project reveal">
+
+            <div class="featured-visual">
+
+                <div class="project-window">
+
+                    <div class="project-window-header">
+
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span>FocusStride AI</span>
+
+                    </div>
+
+                    <div class="focus-screen">
+
+                        <div class="focus-glow"></div>
+
+                        <div class="focus-content">
+
+                            <div class="focus-logo">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+
+                            <span>FOCUSED PRODUCTIVITY</span>
+
+                            <h3>FocusStride AI</h3>
+
+                            <p>
+                                A creative AI-powered productivity
+                                concept designed around focus and progress.
+                            </p>
+
+                            <div class="focus-progress">
+
+                                <div class="progress-label">
+                                    <span>Today's progress</span>
+                                    <strong>75%</strong>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <span></span>
+                                </div>
+
+                            </div>
+
+                            <div class="focus-mini-cards">
+
+                                <div>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Focus</span>
+                                </div>
+
+                                <div>
+                                    <i class="fa-solid fa-bolt"></i>
+                                    <span>Momentum</span>
+                                </div>
+
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>Progress</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="featured-info">
+
+                <div class="project-number">PROJECT / 01</div>
+
+                <h3>FocusStride <span>AI</span></h3>
+
+                <p class="project-intro">
+                    One of my explorations into creating a modern,
+                    useful digital experience with AI-assisted
+                    development.
+                </p>
+
+                <p>
+                    This project represents an important part of my
+                    learning journey — moving beyond individual coding
+                    exercises and thinking about how design, interaction,
+                    functionality and AI can come together in one
+                    product.
+                </p>
+
+                <div class="project-tech">
+
+                    <span><i class="fa-brands fa-html5"></i> Web</span>
+                    <span><i class="fa-solid fa-wand-magic-sparkles"></i> AI</span>
+                    <span><i class="fa-solid fa-mobile-screen"></i> Responsive</span>
+
+                </div>
+
+                <div class="project-buttons">
+
+                    <a href="https://pip-and-friends-play.lovable.app"
+                       class="btn btn-primary"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Live Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-    <div class="capability-grid">
-      <div class="capability reveal"><h3>Design</h3><p>Create clean, simple and user-friendly website and app interfaces.</p></div>
-      <div class="capability reveal"><h3>Build</h3><p>Create webpages using HTML and CSS, and continue expanding my development skills.</p></div>
-      <div class="capability reveal"><h3>Prototype</h3><p>Turn ideas into wireframes and interface concepts using Figma.</p></div>
-      <div class="capability reveal"><h3>Organize</h3><p>Structure content and user flows so digital experiences are easier to understand.</p></div>
-      <div class="capability reveal"><h3>Explore</h3><p>Use AI tools to experiment with faster design and development workflows.</p></div>
-      <div class="capability reveal"><h3>Learn</h3><p>Quickly pick up new technologies by applying them to real projects.</p></div>
-    </div>
-  </div>
+
 </section>
 
-<!-- ============ SKILLS ============ -->
-<section class="section" id="skills">
-  <div class="wrap">
-    <div class="section-label">
-      <span class="num mono">04 / SKILLS</span>
-      <h2>Skills</h2>
-      <p class="section-sub">Honest levels, not fake percentages — Learning, Practicing, or Comfortable.</p>
+
+<!-- =========================
+     OTHER PROJECTS
+========================= -->
+
+<section class="section projects-section">
+
+    <div class="section-container">
+
+        <div class="section-heading centered reveal">
+
+            <span class="section-number">04 / PROJECTS</span>
+
+            <h2>
+                Small projects.
+                <span>Real progress.</span>
+            </h2>
+
+            <p>
+                Every project is part of the learning process.
+            </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- Project 1 -->
+
+            <article class="project-card project-card-one reveal">
+
+                <div class="project-card-top">
+
+                    <span class="project-category">WEB EXPERIENCE</span>
+
+                    <div class="project-card-icon">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                    </div>
+
+                </div>
+
+                <div class="project-art">
+
+                    <div class="mini-browser">
+
+                        <div class="mini-browser-bar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="mini-browser-content">
+
+                            <div class="mini-title"></div>
+                            <div class="mini-text"></div>
+
+                            <div class="mini-blocks">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h3>Pip & Friends Play</h3>
+
+                <p>
+                    A playful web experience created with a strong focus
+                    on colorful visuals and an engaging experience.
+                </p>
+
+                <div class="card-footer">
+
+                    <div class="card-tags">
+                        <span>Web</span>
+                        <span>Design</span>
+                        <span>AI</span>
+                    </div>
+
+                    <a href="https://pip-and-friends-play.lovable.app"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="icon-button"
+                       aria-label="View Pip and Friends Play">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Project 2 -->
+
+            <article class="project-card project-card-two reveal">
+
+                <div class="project-card-top">
+
+                    <span class="project-category">CODING LAB</span>
+
+                    <div class="project-card-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                </div>
+
+                <div class="project-art feature-selection-art">
+
+                    <div class="checkbox-interface">
+
+                        <div class="checkbox-title">
+                            Feature Selection
+                        </div>
+
+                        <label>
+                            <input type="checkbox" checked>
+                            <span>Feature A</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Feature B</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox" checked>
+                            <span>Feature C</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <h3>Feature Selection UI</h3>
+
+                <p>
+                    A hands-on coding exercise focused on HTML structure,
+                    labels, checkboxes and clean interface design.
+                </p>
+
+                <div class="card-footer">
+
+                    <div class="card-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>UI</span>
+                    </div>
+
+                    <span class="learning-badge">
+                        Learning
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Project 3 -->
+
+            <article class="project-card project-card-three reveal">
+
+                <div class="project-card-top">
+
+                    <span class="project-category">PORTFOLIO</span>
+
+                    <div class="project-card-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                </div>
+
+                <div class="project-art portfolio-art">
+
+                    <div class="portfolio-preview">
+
+                        <div class="preview-avatar">M</div>
+
+                        <div class="preview-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="preview-button">
+                            Explore
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    This portfolio itself is part of my journey — designed
+                    to document what I'm learning and what I'm building.
+                </p>
+
+                <div class="card-footer">
+
+                    <div class="card-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="#home"
+                       class="icon-button"
+                       aria-label="View portfolio">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
     </div>
 
-    <div class="skill-cats">
-      <div class="skill-cat reveal">
-        <h3>Web Development</h3>
-        <ul class="skill-list">
-          <li><span>HTML5</span><span class="level comfortable">Comfortable</span></li>
-          <li><span>CSS3</span><span class="level practicing">Practicing</span></li>
-          <li><span>Semantic HTML</span><span class="level comfortable">Comfortable</span></li>
-          <li><span>Responsive Web Design</span><span class="level practicing">Practicing</span></li>
-          <li><span>Flexbox</span><span class="level practicing">Practicing</span></li>
-          <li><span>CSS Grid</span><span class="level learning">Learning</span></li>
-          <li><span>Git</span><span class="level practicing">Practicing</span></li>
-          <li><span>GitHub</span><span class="level practicing">Practicing</span></li>
-          <li><span>GitHub Pages</span><span class="level comfortable">Comfortable</span></li>
-        </ul>
-      </div>
-
-      <div class="skill-cat reveal">
-        <h3>UI/UX</h3>
-        <ul class="skill-list">
-          <li><span>UI Design</span><span class="level practicing">Practicing</span></li>
-          <li><span>UX Fundamentals</span><span class="level practicing">Practicing</span></li>
-          <li><span>Wireframing</span><span class="level practicing">Practicing</span></li>
-          <li><span>User Flows</span><span class="level learning">Learning</span></li>
-          <li><span>Prototyping</span><span class="level practicing">Practicing</span></li>
-          <li><span>Typography</span><span class="level practicing">Practicing</span></li>
-          <li><span>Color Theory</span><span class="level practicing">Practicing</span></li>
-          <li><span>Visual Hierarchy</span><span class="level practicing">Practicing</span></li>
-          <li><span>Mobile-first Design</span><span class="level learning">Learning</span></li>
-        </ul>
-      </div>
-
-      <div class="skill-cat reveal">
-        <h3>Design Tools</h3>
-        <ul class="skill-list">
-          <li><span>Figma</span><span class="level practicing">Practicing</span></li>
-          <li><span>FigJam</span><span class="level practicing">Practicing</span></li>
-          <li><span>VS Code</span><span class="level comfortable">Comfortable</span></li>
-          <li><span>Notion</span><span class="level comfortable">Comfortable</span></li>
-        </ul>
-      </div>
-
-      <div class="skill-cat reveal">
-        <h3>AI & Modern Development</h3>
-        <ul class="skill-list">
-          <li><span>Prompt Engineering</span><span class="level practicing">Practicing</span></li>
-          <li><span>AI-assisted Development</span><span class="level practicing">Practicing</span></li>
-          <li><span>Lovable</span><span class="level learning">Learning</span></li>
-          <li><span>AI-assisted Prototyping</span><span class="level learning">Learning</span></li>
-          <li><span>AI-powered Product Exploration</span><span class="level learning">Learning</span></li>
-        </ul>
-      </div>
-
-      <div class="skill-cat reveal">
-        <h3>Version Control</h3>
-        <ul class="skill-list">
-          <li><span>Git</span><span class="level practicing">Practicing</span></li>
-          <li><span>GitHub</span><span class="level practicing">Practicing</span></li>
-          <li><span>GitHub Pages</span><span class="level comfortable">Comfortable</span></li>
-          <li><span>GitHub Actions</span><span class="level learning">Learning</span></li>
-          <li><span>Repository Workflows</span><span class="level practicing">Practicing</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
 </section>
 
-<!-- ============ CURRENTLY LEARNING ============ -->
-<section class="section learning-path">
-  <div class="wrap">
-    <div class="section-label">
-      <span class="num mono">05 / GROWTH</span>
-      <h2>Currently learning</h2>
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section class="section skills-section" id="skills">
+
+    <div class="section-container">
+
+        <div class="skills-layout">
+
+            <div class="skills-intro reveal">
+
+                <span class="section-number">05 / SKILLS</span>
+
+                <h2>
+                    Tools I'm
+                    <span>growing with.</span>
+                </h2>
+
+                <p>
+                    I'm still learning — and that's something I want this
+                    portfolio to show honestly. These are the technologies
+                    and tools I'm actively exploring through practice.
+                </p>
+
+                <div class="skill-note">
+                    <i class="fa-solid fa-seedling"></i>
+                    <span>
+                        Skills grow through projects, not just lists.
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="skills-cloud reveal">
+
+                <div class="skill-pill skill-large html">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML5</span>
+                    <small>Structure</small>
+                </div>
+
+                <div class="skill-pill skill-large css">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS3</span>
+                    <small>Design</small>
+                </div>
+
+                <div class="skill-pill js">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="skill-pill github">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+
+                <div class="skill-pill ai">
+                    <i class="fa-solid fa-robot"></i>
+                    <span>AI Tools</span>
+                </div>
+
+                <div class="skill-pill responsive">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>Responsive Design</span>
+                </div>
+
+                <div class="skill-pill git">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+
+                <div class="skill-pill lovable">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span>AI Prototyping</span>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-    <div class="path">
-      <div class="path-item reveal"><span class="path-dot"></span><div><h3>CSS</h3><p>Improving layouts, responsive design and visual styling.</p></div></div>
-      <div class="path-item reveal"><span class="path-dot"></span><div><h3>Responsive Web Design</h3><p>Learning to make interfaces work beautifully across devices.</p></div></div>
-      <div class="path-item reveal"><span class="path-dot"></span><div><h3>JavaScript</h3><p>Next step toward interactive web applications.</p></div></div>
-      <div class="path-item reveal"><span class="path-dot"></span><div><h3>Advanced UI/UX</h3><p>Improving user-centered design and interaction design.</p></div></div>
-      <div class="path-item reveal"><span class="path-dot"></span><div><h3>App Development</h3><p>Learning how to turn product ideas into functional applications.</p></div></div>
-      <div class="path-item reveal"><span class="path-dot"></span><div><h3>AI-Powered Development</h3><p>Exploring how AI can accelerate design and development.</p></div></div>
-    </div>
-  </div>
+
 </section>
 
-<!-- ============ CERTIFICATES ============ -->
-<section class="section">
-  <div class="wrap">
-    <div class="section-label">
-      <span class="num mono">06 / PROOF</span>
-      <h2>Certificates & achievements</h2>
+
+<!-- =========================
+     CERTIFICATES / LEARNING
+========================= -->
+
+<section class="section learning-section" id="learning">
+
+    <div class="section-container">
+
+        <div class="section-heading centered reveal">
+
+            <span class="section-number">06 / LEARNING</span>
+
+            <h2>
+                Learning is part
+                <span>of the portfolio.</span>
+            </h2>
+
+            <p>
+                The goal isn't to look like I know everything.
+                The goal is to show that I'm continuously improving.
+            </p>
+
+        </div>
+
+
+        <div class="learning-grid">
+
+            <div class="learning-card reveal">
+
+                <div class="learning-card-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <span class="learning-status">IN PROGRESS</span>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Building a practical foundation in HTML, CSS,
+                    JavaScript and responsive web design through
+                    hands-on exercises and projects.
+                </p>
+
+                <div class="learning-progress">
+                    <span></span>
+                </div>
+
+                <small>
+                    Learn • Practice • Build
+                </small>
+
+            </div>
+
+
+            <div class="learning-card reveal">
+
+                <div class="learning-card-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+
+                <span class="learning-status">EXPLORING</span>
+
+                <h3>AI-Assisted Development</h3>
+
+                <p>
+                    Exploring AI tools for brainstorming, prototyping,
+                    coding assistance and turning ideas into working
+                    digital experiences.
+                </p>
+
+                <div class="learning-progress ai-progress">
+                    <span></span>
+                </div>
+
+                <small>
+                    Experiment • Create • Improve
+                </small>
+
+            </div>
+
+
+            <div class="learning-card reveal certificate-card">
+
+                <div class="learning-card-icon">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+
+                <span class="learning-status">COMING SOON</span>
+
+                <h3>Certificates</h3>
+
+                <p>
+                    This section will grow as I complete and collect
+                    relevant courses, certifications and learning
+                    milestones.
+                </p>
+
+                <div class="certificate-placeholder">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>More milestones ahead</span>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-    <div class="cert-grid">
-      <div class="cert-card reveal">
-        <div class="cert-thumb">Upload certificate</div>
-        <h3>freeCodeCamp</h3>
-        <p>HTML5 / Web Development learning.</p>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-thumb">Upload certificate</div>
-        <h3>Anthropic Academy</h3>
-        <p>Cloud 101 · Cloud Code 101 · AI Fluency Framework</p>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-thumb">Upload certificate</div>
-        <h3>Git & GitHub Journey</h3>
-        <p>Practical learning through repositories, commits, GitHub Pages and development workflows.</p>
-      </div>
-    </div>
-  </div>
+
 </section>
 
-<!-- ============ ABOUT ============ -->
-<section class="section about" id="about">
-  <div class="wrap about-grid">
-    <div>
-      <span class="num mono">07 / ABOUT</span>
-      <h2 class="reveal">About me</h2>
-      <p class="reveal">I'm Maria Adeel, a self-taught UI/UX designer and web developer who is building my skills through hands-on projects.</p>
-      <p class="reveal">My journey started with learning HTML and gradually expanded into CSS, Git, GitHub, Figma, UI/UX design and AI-assisted development.</p>
-      <p class="reveal">What I enjoy most is taking an idea and turning it into something people can actually see and use. I learn by building projects, experimenting with different tools, and improving with every iteration.</p>
-      <p class="reveal">I'm especially interested in educational technology, user-friendly interfaces and AI-powered products. I'm currently continuing my journey through responsive web design, JavaScript, UI/UX and app development.</p>
+
+<!-- =========================
+     MINDSET
+========================= -->
+
+<section class="quote-section">
+
+    <div class="quote-bg"></div>
+
+    <div class="quote-container reveal">
+
+        <div class="quote-mark">
+            “
+        </div>
+
+        <blockquote>
+            I don't need to know everything
+            <span>before I begin.</span>
+            I learn by beginning.
+        </blockquote>
+
+        <div class="quote-author">
+            <span></span>
+            Maria Adeel
+            <span></span>
+        </div>
+
     </div>
-    <div class="excited-box reveal">
-      <h3>What I'm excited about</h3>
-      <ul>
-        <li>Educational technology</li>
-        <li>Children's learning experiences</li>
-        <li>Islamic educational products</li>
-        <li>User-friendly interfaces</li>
-        <li>Small-business websites</li>
-        <li>AI-assisted development</li>
-        <li>Creative digital products</li>
-      </ul>
-    </div>
-  </div>
+
 </section>
 
-<!-- ============ HORIZON WEB STUDIO ============ -->
-<section class="section horizon" id="horizon">
-  <div class="wrap horizon-inner">
-    <span class="label-tag mono reveal">PERSONAL BRAND</span>
-    <h2 class="reveal">Horizon Web Studio</h2>
-    <p class="horizon-sub reveal">Building professional websites for growing businesses.</p>
-    <p class="reveal">Horizon Web Studio is my web design brand, focused on helping small businesses establish a professional online presence — from restaurants to local service providers.</p>
 
-    <div class="horizon-services reveal">
-      <span class="tag">Business websites</span>
-      <span class="tag">Restaurant websites</span>
-      <span class="tag">Portfolio websites</span>
-      <span class="tag">Landing pages</span>
-      <span class="tag">Responsive websites</span>
-      <span class="tag">Website redesign</span>
-      <span class="tag">Basic UI design</span>
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section contact-section" id="contact">
+
+    <div class="section-container">
+
+        <div class="contact-card reveal">
+
+            <div class="contact-decoration decoration-one"></div>
+            <div class="contact-decoration decoration-two"></div>
+
+            <div class="contact-content">
+
+                <span class="section-number">07 / CONTACT</span>
+
+                <h2>
+                    Let's create
+                    <span>something meaningful.</span>
+                </h2>
+
+                <p>
+                    Whether you're a recruiter, a fellow learner,
+                    a potential collaborator or simply someone who
+                    wants to say hello — I'd love to connect.
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a href="https://www.linkedin.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-link linkedin">
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                        <div>
+                            <small>Connect on</small>
+                            <strong>LinkedIn</strong>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                    </a>
+
+
+                    <a href="https://github.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-link github-link">
+
+                        <i class="fa-brands fa-github"></i>
+
+                        <div>
+                            <small>Explore my</small>
+                            <strong>GitHub</strong>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="contact-visual">
+
+                <div class="contact-orbit orbit-one"></div>
+                <div class="contact-orbit orbit-two"></div>
+                <div class="contact-orbit orbit-three"></div>
+
+                <div class="contact-center">
+                    <span>M</span>
+                </div>
+
+                <div class="orbit-icon icon-html">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+
+                <div class="orbit-icon icon-css">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+
+                <div class="orbit-icon icon-js">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+
+                <div class="orbit-icon icon-ai">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <a class="btn btn-primary reveal" href="#contact">Build a website with me →</a>
-  </div>
-</section>
-
-<!-- ============ CONTACT ============ -->
-<section class="section" id="contact">
-  <div class="wrap">
-    <div class="contact-box reveal">
-      <span class="label-tag mono">08 / CONTACT</span>
-      <h2>Have an idea? Let's build it.</h2>
-      <p>I'm always interested in learning, creating and working on meaningful digital projects.</p>
-      <div class="contact-links">
-        <a class="btn btn-primary" href="mailto:Learnwithmariraadeel@gmail.com">Email me</a>
-        <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </div>
-  </div>
 </section>
 
 </main>
 
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
-  <div class="wrap footer-inner">
-    <span>© 2026 Maria Adeel.</span>
-    <span class="mono">DESIGN → DEVELOPMENT → AI → DIGITAL PRODUCTS</span>
-  </div>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo">
+                <span class="logo-mark">M</span>
+                <span>Maria<span class="logo-dot">.</span></span>
+            </a>
+
+            <p>
+                Learning. Building. Growing.
+            </p>
+
+        </div>
+
+        <div class="footer-center">
+            Designed & built with curiosity.
+        </div>
+
+        <div class="footer-right">
+            © <span id="year"></span> Maria Adeel
+        </div>
+
+    </div>
+
 </footer>
 
+
+<!-- Back to top -->
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
 <script src="script.js"></script>
+
 </body>
 </html>
